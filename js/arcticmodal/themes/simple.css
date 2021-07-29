@@ -1,0 +1,73 @@
+.modalInner{
+  display: none;
+}
+
+.box-modal{
+	/*position: relative;	*/ /*включение стиля помещает крестик закрытия внутрь поп-апа, а не в углу окна*/
+	/*box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);*/
+	/*border-radius: 6px;*/
+	max-width: 560px;
+	margin: 0 auto;
+	padding: 0px;
+	background: #fff;  
+}
+
+.box-modal .box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
+.box-modal .box-modal_close:hover { color: #666; }
+
+.box-modal .box-modal_close-txt {
+	text-align: right;margin-top:20px;margin-right:-25px;font-size:14px;color:#777777;cursor:pointer;
+}
+
+.box-modal .innerCover{
+	width:100%
+}
+
+.box-modal .innerText{
+	padding:0px 40px 10px;
+}
+
+.box-modal h2{
+  font: 400 1.8em 'IntroBold', 'Tahoma', sans-serif;
+  margin-bottom: 3px;
+}
+
+.box-modal p{
+  /*font: 400 0.9em 'Roboto', 'Tahoma', sans-serif;*/
+} 
+
+.box-modal .textLinkCs{
+	color:#fd5900;font-size:18px;font-family: 'IntroBold', 'Tahoma', sans-serif;
+}
+.box-modal .textLinkCs a{
+	color:#fd5900;text-decoration:none;
+}
+
+.box-modal .textLinkCbig{
+	color:#fd5900;font-size:28px;font-weight:bold;font-family: 'IntroBold', 'Tahoma', sans-serif;
+}
+.box-modal .textLinkCbig a{
+	color:#fd5900;text-decoration:none;
+}
+
+
+@media screen and (max-width: 380px) {
+
+.box-modal h2{font-size: 1.5em;}
+.box-modal .innerText{padding:0px 25px 10px;}
+.box-modal p{font-size: 16px;line-height:22px;} 
+.box-modal .textLinkCbig{font-size:28px;}
+.box-modal .box-modal_close-txt {margin-right:-10px;}
+
+}
+
+@media screen and (max-width: 360px) {
+
+.box-modal h2{font-size: 1.2em;}
+.box-modal .innerText{padding:0px 25px 10px;}
+.box-modal p{font-size: 14px;line-height:20px;} 
+.box-modal .textLinkCbig{font-size:22px;}
+.box-modal .box-modal_close-txt {margin-right:-10px;}
+.box-modal .box-modal_close-txt {margin-top:10px;}
+
+}

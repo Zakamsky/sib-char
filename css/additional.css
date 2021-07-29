@@ -1,0 +1,8 @@
+@media screen and (max-width: 640px) {
+    .phone-button-podmena {
+        display: block;
+        width:55px ;
+        height: 53px;
+        background: url("/wp-content/themes/public/img/icon_phone.svg");
+    }
+}

@@ -1,0 +1,1739 @@
+html
+	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
+	-webkit-touch-callout none
+	-webkit-text-size-adjust 100%
+	-webkit-font-smoothing antialiased
+	text-rendering optimizeLegibility
+
+html
+body
+	position relative
+	height 100%
+
+body
+	font 16px/24px 'Open Sans'
+	color #000
+
+a
+	color #000
+	text-decoration underline
+	&:hover
+		text-decoration none
+
+.wrap
+	background-color #fff
+	min-height 100%
+	min-width 320px
+	overflow hidden
+	position relative
+	&-logo
+		width 193px
+		position absolute
+		top 50px
+		left 50%
+		margin-left -97px
+		z-index 100
+		text-align center
+		a
+			display block
+			vertical-align top
+		img
+			display inline-block
+			vertical-align top
+			width 100%
+			height auto
+	&-up
+		padding-bottom 290px
+	&-promo
+		height 970px
+		// background #1a2c10 url('../img/head.jpg') top center no-repeat
+		padding-top 300px
+		// margin-bottom 70px
+		position relative
+		&:after
+			display block
+			content ""
+			width 100%
+			height 330px
+			background url('../img/head-line.png') top center no-repeat
+			position absolute
+			bottom 0
+			left 0
+			pointer-events none
+	&-tour
+		width 510px
+		font-size 15px
+		line-height 25px
+		color #fff
+		text-transform uppercase
+		text-align center
+		position absolute
+		top 660px
+		left 50%
+		margin-left -255px
+		&:before
+		&:after
+			display block
+			content ""
+			width 84px
+			height 10px
+			background url('../img/tour-line.png') 0 0 no-repeat
+			position absolute
+			top 6px
+		&:before
+			left 0
+		&:after
+			right 0
+		i
+			display inline-block
+			vertical-align top
+			width 48px
+			height 33px
+			background url('../img/tour.png') 0 0 no-repeat
+			position relative
+			top -4px
+			margin-right 16px
+		a
+			color #fff
+			text-decoration none
+			position relative
+			&:before
+				display block
+				content ""
+				width 86px
+				height 86px
+				background url('../img/wrap-play.png') 0 0 no-repeat
+				position absolute
+				top -35px
+				left 100%
+				margin-left 320px
+			&:hover
+				color #be925c
+	&-dn
+		height 460px
+		padding-top (460 - 270)px
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		&:before
+			display block
+			content ""
+			height 173px
+			background url('../img/foot-bg.png') top center repeat-x
+			position absolute
+			top 0
+			left 0
+			right 0
+		&-bg
+			background-color #fff
+			position absolute
+			padding-top 20px
+			top 170px
+			right 0
+			bottom 0
+			left 0
+	&-video
+		overflow hidden
+		position fixed
+		pointer-events none
+		top -250px
+		right 0
+		bottom -250px
+		left 0
+		z-index 0
+		transform scale(1.2)
+		&:before
+			display block
+			content ""
+			background-color rgba(0,0,0,0.6)
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			z-index 10
+		iframe
+			border none
+			width 100%
+			height 100%
+			overflow hidden
+			position absolute
+			top 0
+			left 0
+.row
+	width 1260px
+	margin 0 auto
+.head
+	position absolute
+	top 10px
+	left 0
+	right 0
+	z-index 10
+	.row
+		clear()
+		position relative
+	&-location
+		float left
+		font-size 17px
+		line-height 23px
+		color #fff
+		text-transform uppercase
+		margin-top 52px
+		margin-left 13px
+		a
+			color inherit
+			text-decoration none
+		&:before
+			float left
+			display block
+			content ""
+			width 14px
+			height 18px
+			background url('../img/location.png') 0 0 no-repeat
+			margin-right 15px
+			position relative
+			top 2px
+	&-phone
+		float right
+		font-size 17px
+		line-height 23px
+		font-family $regular
+		color #fff
+		margin-top 54px
+		margin-right 215px
+		b
+			font-weight normal
+			font-family $bold
+		a
+			color inherit
+			text-decoration none
+	&-btn
+		width 194px
+		position absolute
+		top 38px
+		right 0
+		.btn
+			height 50px
+			display block
+			line-height 18px
+			font-family $regular
+			color #fff
+			border 3px solid white
+			box-shadow 0 4px 10px rgba(1, 16, 4, 0.89)
+			padding-top 5px
+			text-align center
+			text-decoration none
+			b
+				display block
+				font-weight normal
+				font-family $bold
+.nav
+	position absolute
+	top 120px
+	left 0
+	right 0
+	z-index 10
+	&-open
+		display none
+	&-menu
+		height 64px
+		font-size 0
+		line-height 0
+		position relative
+		list()
+		clear()
+		padding-top 22px
+		&:before
+			display block
+			content ""
+			width 10px
+			height 10px
+			border 2px solid #938a71
+			border-radius 50%
+			position absolute
+			top 28px
+		&_left
+			float left
+			width 50%
+			background url('../img/nav-left.png') top left no-repeat
+			padding-left 75px
+			&:before
+				left 40px
+		&_right
+			float right
+			width 50%
+			background url('../img/nav-right.png') top right no-repeat
+			text-align right
+			padding-right 75px
+			&:before
+				right 40px
+		&-item
+			display inline-block
+			vertical-align top
+			font-size 19px
+			line-height 25px
+			font-family $regular
+			color #fff
+			text-transform uppercase
+			position relative
+			+ li
+				margin-left 35px
+			a
+				display block
+				color inherit
+				text-decoration none
+				position relative
+				&:hover
+					color #be925c
+			&_current
+				a
+					color #be925c
+				&:before
+					display block
+					content ""
+					height 10px
+					background-color #295619
+					position absolute
+					top 100%
+					margin-top -14px
+					left -10px
+					right -10px
+.carousel
+	&-start
+		width 1260px
+		margin-left auto
+		margin-right auto
+		margin-bottom 100px
+		.swiper-wrapper
+			z-index 0
+		.swiper-slide
+			opacity 0 !important
+			&-active
+				opacity 1 !important
+		.carousel-control
+			&:before
+				background-color #fff
+			&:hover:before
+				background-color #be925c
+		.carousel-prev
+			&:after
+				border-right-color #fff
+			&:hover:after
+				border-right-color #be925c
+		.carousel-next
+			&:after
+				border-left-color #fff
+			&:hover:after
+				border-left-color #be925c
+	&-item
+		color #fff
+		text-transform uppercase
+		text-align center
+		&-title
+			font-size 50px
+			line-height 50px
+			font-family $bold
+		&-text
+			font-size 38px
+			line-height 46px
+			max-width 840px
+			margin-left auto
+			margin-right auto
+			padding 20px 0 20px 0
+.about
+	position relative
+	background-color #fff
+	padding-top 70px
+	padding-bottom 214px
+	// margin-bottom 214px
+	.row
+		height 550px
+		position relative
+	h2
+		font-weight normal
+		font-size 118px
+		line-height 110px
+		font-family $bold
+		max-width 510px
+		margin 0 0 90px
+		position relative
+		&:before
+			display block
+			content ""
+			width 300px
+			height 18px
+			background url('../img/reviews-line.png') 0 0 no-repeat
+			position absolute
+			bottom -46px
+			left 0
+	&-time
+		width 194px
+		position absolute
+		top -40px
+		left 534px
+		text-align center
+		text-transform uppercase
+		background url('../img/about.png') top center no-repeat
+		padding-top 350px
+		&_number
+			display block
+			font-size 118px
+			line-height 90px
+			font-family $black
+			position relative
+			left 3px
+		&_type
+			display block
+			font-size 25px
+			line-height 25px
+			padding 4px 0
+		&_location
+			font-size 31px
+			line-height 31px
+			font-family $black
+	&-text
+		max-width 510px
+	.carousel-about
+		width 514px
+		height 600px
+		position absolute
+		top 0
+		right 0
+	&-item
+		width 164px
+		height 164px
+		text-align center
+		position relative
+		overflow hidden
+		nosel()
+		cursor default
+		span
+			display none
+			font-weight bold
+			font-size 15px
+			line-height 20px
+			text-transform uppercase
+			padding 0 20px
+	&-photo
+		width 80px
+		height 80px
+		line-height 78px
+		margin 20px auto 10px auto
+		img
+			display inline-block
+			vertical-align middle
+	&-tour
+		position absolute
+		bottom 0
+		left 0
+		i
+			display inline-block
+			vertical-align top
+			width 48px
+			height 33px
+			background url('../img/tour-black.png') 0 0 no-repeat
+			position relative
+			top -4px
+			margin-right 16px
+		a
+			font-size 15px
+			line-height 25px
+			text-transform uppercase
+			&:hover
+				color #f01a21
+	&-more
+		font-size 15px
+		line-height 25px
+		text-transform uppercase
+		position absolute
+		bottom 8px
+		left 345px
+		a
+			position relative
+			&:before
+				display block
+				content ""
+				width 50px
+				height 1px
+				background-color #c54b46
+				position absolute
+				top 11px
+				left 100%
+				margin-left 20px
+				transition all .3s ease-out
+				border-width 6px 10px 7px 10px
+				border-right-color #c54b46
+			&:after
+				display block
+				content ""
+				width 0
+				height 0
+				border-style solid
+				border-color transparent
+				border-width 7px 10px 6px 10px
+				border-left-color #c54b46
+				position absolute
+				top 4px
+				left 100%
+				margin-left 62px
+				transition all .3s ease-out
+.catalog
+	background-color #f6f8f6
+	position relative
+	&:before
+		display block
+		content ""
+		width 100%
+		height 214px
+		background url('../img/catalog-up.png') top center no-repeat
+		position absolute
+		top -214px
+		left 0
+	&-tabs
+		clear()
+		margin 0 0 46px
+		h2
+			float left
+			position relative
+			width 25%
+			margin 14px 0 76px 0
+			&:before
+				display block
+				content ""
+				width 300px
+				height 18px
+				background url('../img/reviews-line.png') 0 0 no-repeat
+				position absolute
+				bottom -39px
+				left 0
+		&-nav
+			list()
+			clear()
+			float left
+			width 75%
+		&-item
+			float left
+			width 33.333333%
+			text-align center
+			padding 0 10px
+			a
+				display block
+				height 84px
+				font-size 27px
+				font-family $regular
+				color #8e8c8c
+				text-decoration none
+				border 3px solid #ddd
+				b
+					display block
+					font-weight normal
+					font-family $black
+					padding 15px 0 5px 0
+				&:hover
+					border-color #8e8c8c
+					color #8e8c8c
+				&.current
+					background-color #fff
+					border-color #fff
+					box-shadow 0 4px 20px rgba(78, 72, 79, 0.3)
+					color #000
+	&-body
+		height 650px
+		position relative
+	.js-tabs-body
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		visibility collapse
+		&.current
+			visibility visible
+	&-content
+		padding-right 745px
+		position relative
+		h3
+			font-weight normal
+			font-size 130px
+			line-height 118px
+			font-family $bold
+			margin 0 0 20px
+	&-anons
+		text-transform uppercase
+		margin-bottom 50px
+	&-icons
+		height 127px
+		margin-bottom 25px
+		&-item
+			width 80px
+			height 80px
+			line-height 78px
+			text-align center
+			position relative
+			img
+				position absolute
+				top 0
+				left 0
+			span
+				display none
+	&-more
+		display block
+		font-weight bold
+		text-transform uppercase
+		padding-top 22px
+	&-price
+		font-size 27px
+		line-height 42px
+		position absolute
+		top 496px
+		left 640px
+		&:before
+			float left
+			display block
+			content ""
+			width 42px
+			height 42px
+			background url('../img/money.png') 0 0 no-repeat
+			position relative
+			margin-right 20px
+	&-carousel
+		width 620px
+		border 12px solid #fff
+		box-shadow 0 10px 37px rgba(103, 103, 103, 0.49)
+		overflow hidden
+		position absolute
+		top 0
+		right 0
+		img
+			display block
+			max-width 100%
+			max-height 100%
+	.carousel-control
+		top 100%
+		margin-top 38px
+	.carousel-prev
+		margin-left 25px
+	.carousel-next
+		right 100%
+		margin-right -145px
+	&-btn
+		position absolute
+		top 475px
+		right 0
+	&-tour
+		width 300px
+		text-align center
+		position absolute
+		top 410px
+		right 0
+		i
+			display inline-block
+			vertical-align top
+			width 48px
+			height 33px
+			background url('../img/tour-black.png') 0 0 no-repeat
+			position relative
+			top -4px
+			margin-right 16px
+		a
+			font-size 15px
+			line-height 25px
+			text-transform uppercase
+			&:hover
+				color #f01a21
+	&-rules
+		width 300px
+		text-align center
+		position absolute
+		top 576px
+		right 0
+.kitchen
+	background #000 url('../img/kitchen_lg.jpg') top center no-repeat
+	padding-top 200px
+	height 1200px
+	color #fff
+	text-align center
+	position relative
+	// margin-bottom 100px
+	.row
+		position relative
+		&:before
+		&:after
+			display block
+			content ""
+			border 1px solid #4e484f
+			border-radius 50%
+			pointer-events none
+			position absolute
+			left 50%
+		&:before
+			top 90px
+			width 520px
+			height 520px
+			margin-left -260px
+		&:after
+			top -10px
+			width 720px
+			height 720px
+			margin-left -360px
+	h2
+		font-weight normal
+		font-size 130px
+		line-height 130px
+		font-family $bold
+		color #c0c453
+		position relative
+		margin 0 0 76px
+		z-index 1
+		&:before
+			display block
+			content ""
+			width 300px
+			height 18px
+			background url('../img/kitchen-line.png') 0 0 no-repeat
+			position absolute
+			bottom -32px
+			left 50%
+			margin-left -150px
+	&-anons
+		width 640px
+		font-size 20px
+		margin-left auto
+		margin-right auto
+		position relative
+		z-index 1
+	&-carousel
+		padding 75px 0
+		margin-bottom 60px
+	&-item
+		span
+			display block
+			width 300px
+			text-align left
+			padding-top 10px
+			margin 0 auto
+	&-text
+		margin 0 -10px
+		text-align left
+		position relative
+		z-index 1
+		clear()
+	&-cell
+		float left
+		width 50%
+		padding 0 10px
+	&-more
+		font-size 15px
+		line-height 25px
+		text-align left
+		text-transform uppercase
+		position absolute
+		top 50px
+		right 0
+		z-index 2
+		br
+			display none
+		a
+			color #fff
+			position relative
+			&:before
+				display block
+				content ""
+				width 50px
+				height 1px
+				background-color #c54b46
+				position absolute
+				top 11px
+				right 100%
+				margin-right 20px
+				transition all .3s ease-out
+				border-width 6px 10px 7px 10px
+				border-right-color #c54b46
+			&:after
+				display block
+				content ""
+				width 0
+				height 0
+				border-style solid
+				border-color transparent
+				border-width 7px 10px 6px 10px
+				border-left-color #c54b46
+				position absolute
+				top 4px
+				right 100%
+				margin-right 8px
+				transition all .3s ease-out
+.services
+	background-color #fff
+	position relative
+	padding-top 100px
+	padding-bottom 120px
+	// margin-bottom 120px
+	.row
+		position relative
+	h2
+		font-weight normal
+		font-size 130px
+		line-height 130px
+		font-family $bold
+		color #be7b1d
+		margin 0 0 80px
+		text-align center
+	&-content
+		list()
+		clear()
+		margin 0 -10px
+	&-item
+		float left
+	&-field
+		display block
+		font-size 21px
+		line-height 21px
+		color #fff
+		text-decoration none
+		position relative
+		&_long
+			font-size 27px
+			line-height 27px
+			.services-field-cat
+				background-color #c54b46
+				padding 5px
+				position relative
+				left -5px
+			.services-field-content
+				left 15px
+		&-cat
+			display inline-block
+			vertical-align top
+			font-family $black
+			text-transform uppercase
+		&-title
+			display block
+			font-weight 300
+			text-transform uppercase
+			padding 5px 0
+		&-price
+			display block
+		&-more
+			display none
+		&-content
+			position absolute
+			bottom 30px
+			left 10px
+		&:hover
+			&:before
+				display block
+				content ""
+				border 20px solid #f2b546
+				box-shadow 0 4px 29px rgba(0, 0, 0, 0.3)
+				position absolute
+				top -20px
+				right -20px
+				bottom -20px
+				left -20px
+				z-index 1
+	&-more
+		font-size 15px
+		line-height 25px
+		text-transform uppercase
+		position absolute
+		top 50px
+		right 0
+		br
+			display none
+		a
+			position relative
+			&:before
+				display block
+				content ""
+				width 50px
+				height 1px
+				background-color #c54b46
+				position absolute
+				top 11px
+				right 100%
+				margin-right 20px
+				transition all .3s ease-out
+				border-width 6px 10px 7px 10px
+				border-right-color #c54b46
+			&:after
+				display block
+				content ""
+				width 0
+				height 0
+				border-style solid
+				border-color transparent
+				border-width 7px 10px 6px 10px
+				border-left-color #c54b46
+				position absolute
+				top 4px
+				right 100%
+				margin-right 8px
+				transition all .3s ease-out
+.location
+	background-color #fff
+	position relative
+	padding-bottom 50px
+	// margin-bottom 50px
+	&-row
+		clear()
+	h2
+		float left
+		font-weight normal
+		font-size 130px
+		line-height 120px
+		font-family $bold
+		margin 0
+	&-content
+		margin-left 620px
+		padding-top 20px
+	&-cell
+		float left
+		width 300px
+		margin-left 20px
+		margin-top 25px
+		&_long
+			width 100%
+			padding-right 320px
+			position relative
+			&:before
+				display block
+				content ""
+				width 300px
+				height 18px
+				background url('../img/reviews-line.png') 0 0 no-repeat
+				position absolute
+				top 10px
+				right 20px
+	&-area
+		position relative
+		&:before
+		&:after
+			display block
+			content ""
+			position absolute
+			background-repeat no-repeat
+			background-position 0 0
+		&:before
+			width 536px
+			height 389px
+			background-image url('../img/location-left.png')
+			top -90px
+			left -250px
+		&:after
+			width 435px
+			height 259px
+			background-image url('../img/location-right.png')
+			top -94px
+			right -174px
+	&-maps
+		height 461px
+		position relative
+		z-index 1
+		&:before
+			display block
+			content ""
+			width 1279px
+			height 461px
+			background url('../img/map_1920.png') 0 0 no-repeat
+			position absolute
+			top 0
+			left 50%
+			margin-left -640px
+			pointer-events none
+			z-index 1
+		.maps
+			position absolute
+			top 12px
+			right 12px
+			bottom 12px
+			left 12px
+			iframe
+				position absolute
+				top 0
+				right 0
+				bottom 0
+				left 0
+.area
+	background-color #fff
+	position relative
+	z-index 1
+	text-align center
+	// margin-bottom 90px
+	padding-bottom 90px
+	h2
+		font-size 46px
+		line-height 46px
+		font-family 'Bad Script'
+		margin 0 0 30px
+		b
+			display block
+			font-family $bold
+			padding-top 10px
+	&-item
+		height 270px
+		padding-top 50px
+		margin-bottom 15px
+		text-transform uppercase
+		&:before
+		&:after
+			display block
+			content ""
+			border-radius 50%
+			position absolute
+			top 50%
+			left 50%
+			opacity 0
+		&:before
+			width 124px
+			height 124px
+			border 1px solid #d1d1d1
+			margin -82px 0 0 -62px
+		&:after
+			width 235px
+			height 235px
+			border 1px solid #e8e8e8
+			margin -142px 0 0 -118px
+		span
+			display block
+			width 130px
+			height 130px
+			margin 0 auto 10px auto
+			overflow hidden
+			position relative
+			img
+				display block
+				width 130px
+				height 260px
+				position absolute
+				top 0
+				left 0
+	.carousel-control
+		display none
+.reviews
+	background-color #fff
+	background-image linear-gradient(to top, #f4f4f4 0%, white 100%)
+	position relative
+	padding-bottom 120px
+	h2
+		font-weight normal
+		font-size 72px
+		line-height 72px
+		font-family $bold
+		color #d62053
+		text-align center
+		position relative
+		margin 0 0 16px
+		&:before
+			display block
+			content ""
+			width 300px
+			height 18px
+			background url('../img/reviews-line.png') 0 0 no-repeat
+			position absolute
+			bottom -52px
+			left 50%
+			margin-left -150px
+	.carousel
+		max-width 1048px
+		padding-left 20px
+		padding-right 20px
+	.swiper-slide
+		width 918px
+		height 475px
+		background url('../img/reviews-item_lg.png') 0 0 no-repeat
+		padding-top 155px
+	&-item
+		width 524px
+		height 170px
+		position relative
+		margin 0 auto
+		blockquote
+			margin 0 0 20px
+	&-user
+		color #a6a7a7
+		&_photo
+			width 163px
+			height 163px
+			line-height 135px
+			text-align center
+			border 13px solid #fff
+			border-radius 50%
+			position absolute
+			top 100%
+			left 50%
+			margin-left -80px
+			margin-top -30px
+			&:before
+				display block
+				content ""
+				width 94px
+				height 49px
+				background url('../img/reviews-green.png') 0 0 no-repeat
+				position absolute
+				top 100%
+				left 22px
+				margin-top -20px
+			img
+				display block
+				max-width 100%
+				max-height 100%
+				border-radius 50%
+.foot
+	min-height 270px
+	padding-left 300px
+	position relative
+	clear()
+	.row
+		position relative
+	&-logo
+		width 193px
+		position absolute
+		top 16px
+		left 0
+		img
+			display block
+			width 100%
+			height auto
+	&-cell
+		float left
+		width 300px
+		margin-left 20px
+		margin-top 25px
+		&_long
+			width 100%
+			padding-top 15px
+			b
+				display block
+				font-weight bold
+				max-width 300px
+	&-phone
+		a
+			color $red
+	&-doc
+		min-height 48px
+	&-btn
+		position absolute
+		top 17px
+		right 0
+	&-dev
+		width 300px
+		position absolute
+		top 186px
+		right 0
+
+.body
+	&-page
+		.wrap-promo
+			height 410px
+			margin-bottom 10px
+		.wrap-tour
+			display none
+		&-content
+			position relative
+			z-index 1
+			.services
+				padding-top 40px
+				margin-bottom 0
+		&-kitchen
+			.service-block
+				min-height 0
+			.service-info
+				padding-bottom 0
+				&:after
+					display none
+				h2
+					position relative
+					text-align center
+					&:before
+					&:after
+						display block
+						content ""
+						width 300px
+						height 18px
+						background url('../img/orange-line.png') 0 0 no-repeat
+						position absolute
+						top 25px
+					&:before
+						left 0
+					&:after
+						right 0
+			.service-sheff
+				background-color #f6f8f6
+				padding-bottom 120px
+				&:after
+					display block
+					content ""
+					height 130px
+					background url('../img/offers-about-bottom.png') 0 0 no-repeat
+					position absolute
+					bottom 0
+					left 0
+					right 0
+				h2
+					line-height 55px
+					&:before
+					&:after
+						margin-top 8px
+					span
+						display block
+						max-width 600px
+						margin 0 auto
+				.service-tech
+					span
+					b
+						background-color #f6f8f6
+		&-single
+			.service-menu
+				h2
+					line-height 55px
+					&:before
+					&:after
+						margin-top 8px
+					span
+						display block
+						max-width 600px
+						margin 0 auto
+		h1
+			font-weight normal
+			font-size 74px
+			line-height 74px
+			font-family $bold
+			margin 0 0 40px
+.offers
+	&-block
+		min-height 440px
+		padding-right 740px
+		margin-bottom 60px
+		position relative
+		h2
+			font-weight normal
+			font-size 46px
+			line-height 46px
+			font-family $bold
+			color #c54b46
+			padding-top 40px
+			margin 0 0 20px
+		&-anons
+			line-height 24px
+			font-family $bold
+			text-transform uppercase
+			margin-bottom 8px
+		&-time
+			display inline-block
+			vertical-align top
+			background-color #c54b46
+			font-weight bold
+			font-size 14px
+			line-height 14px
+			color #fff
+			padding 4px 9px
+			position relative
+			&:before
+				display block
+				content ""
+				float left
+				width 14px
+				height 14px
+				background url('../img/offers-time.png') 0 0 no-repeat
+				margin-right 8px
+		&-content
+			padding-top 10px
+			margin-bottom 24px
+		&-term
+			margin-bottom 12px
+		&-photo
+			width 618px
+			border 12px solid white
+			box-shadow 2.7px 6.4px 20px rgba(103, 103, 103, 0.28)
+			position absolute
+			top 0
+			right 0
+			img
+				display block
+				max-width 100%
+				max-height 100%
+		&-contacts
+			clear()
+			b
+				float left
+				font-weight bold
+				font-size 12px
+				line-height 50px
+				text-transform uppercase
+				margin-right 10px
+			.btn
+				float left
+				display block
+				width 194px
+				height 51px
+				font-size 17px
+				line-height 47px
+				font-family $bold
+				color #c54b46
+				border 3px solid #c54b46
+				text-align center
+				a
+					color inherit
+					text-decoration none
+	&-container
+		h2
+			font-weight normal
+			font-size 46px
+			line-height 36px
+			font-family $bold
+			text-align center
+			position relative
+			margin 0 0 60px
+			&:before
+			&:after
+				display block
+				content ""
+				width 300px
+				height 18px
+				background url('../img/reviews-line.png') 0 0 no-repeat
+				position absolute
+				top 10px
+			&:before
+				left 0
+			&:after
+				right 0
+	&-list
+		list()
+		clear()
+		font-size 0
+		line-height 0
+		margin 0 -10px
+	&-item
+		display inline-block
+		vertical-align top
+		width 33.333333%
+		padding 0 10px
+		font-size 16px
+		line-height 22px
+		font-family $bold
+		&-photo
+			display block
+			border 18px solid white
+			box-shadow 1.6px 3.7px 29px rgba(0, 0, 0, 0.3)
+			margin-bottom 40px
+			position relative
+			span
+				display none
+			img
+				display block
+				max-width 100%
+				max-height 100%
+			&:hover
+				border-color #f2b546
+				&:before
+					display block
+					content ""
+					position absolute
+					top 0
+					right 0
+					bottom 0
+					left 0
+					background-color rgba(49, 48, 48, 0.67)
+				span
+					display block
+					font-size 13px
+					line-height 20px
+					font-family 'Open Sans'
+					color #fff
+					text-decoration underline
+					text-transform uppercase
+					position absolute
+					bottom 30px
+					right 40px
+					z-index 1
+					&:before
+						display block
+						content ""
+						width 50px
+						height 1px
+						background-color #fff
+						position absolute
+						top 11px
+						right 100%
+						margin-right 20px
+						transition all .3s ease-out
+						border-width 6px 10px 7px 10px
+						border-right-color #c54b46
+					&:after
+						display block
+						content ""
+						width 0
+						height 0
+						border-style solid
+						border-color transparent
+						border-width 7px 10px 6px 10px
+						border-left-color #fff
+						position absolute
+						top 4px
+						right 100%
+						margin-right 8px
+						transition all .3s ease-out
+		&-title
+			display inline-block
+			vertical-align top
+			font-size 27px
+			line-height 32px
+			font-family $bold
+			color #000
+		p
+			text-transform uppercase
+	&-info
+		background-color #f6f8f6
+		padding-bottom 150px
+		position relative
+		&:before
+			display block
+			content ""
+			height 170px
+			background url('../img/offers-about-top.png') 0 0 no-repeat
+			margin-bottom 30px
+		&:after
+			display block
+			content ""
+			height 130px
+			background url('../img/offers-about-bottom.png') 0 0 no-repeat
+			position absolute
+			bottom 0
+			left 0
+			right 0
+		h2
+			font-weight normal
+			font-size 119px
+			line-height 119px
+			font-family $bold
+			text-align center
+			margin 0 0 25px
+		.column
+			clear()
+			margin 0 -60px
+			&-cell
+				float left
+				width 50%
+				padding 0 60px
+.service
+	&-block
+		min-height 550px
+		padding-right 740px
+		margin-bottom 60px
+		position relative
+		h2
+			font-weight normal
+			font-size 46px
+			line-height 46px
+			font-family $bold
+			color #c54b46
+			padding-top 40px
+			margin 0 0 20px
+		&-anons
+			line-height 24px
+			font-family $bold
+			text-transform uppercase
+			margin-bottom 18px
+		&-content
+			margin-bottom 24px
+		&-photo
+			width 618px
+			border 12px solid white
+			box-shadow 2.7px 6.4px 20px rgba(103, 103, 103, 0.28)
+			position absolute
+			top 0
+			right 0
+			img
+				display block
+				max-width 100%
+				max-height 100%
+		&-btn
+			position absolute
+			top 455px
+			right 0
+		&-price
+			font-size 27px
+			line-height 42px
+			position absolute
+			top 470px
+			left 640px
+			&:before
+				float left
+				display block
+				content ""
+				width 42px
+				height 42px
+				background url('../img/money.png') 0 0 no-repeat
+				position relative
+				margin-right 20px
+		&-rules
+			font-size 13px
+			line-height 20px
+			position absolute
+			top 520px
+			left 640px
+	&-menu
+		h2
+			font-weight normal
+			font-size 46px
+			line-height 36px
+			font-family $bold
+			color #c54b46
+			text-align center
+			position relative
+			margin 0 0 50px
+			&:before
+			&:after
+				display block
+				content ""
+				width 300px
+				height 18px
+				background url('../img/reviews-line.png') 0 0 no-repeat
+				position absolute
+				top 10px
+			&:before
+				left 0
+			&:after
+				right 0
+	&-list
+		list()
+		clear()
+		font-size 0
+		line-height 0
+		margin 0 -60px
+	&-row
+		display inline-block
+		vertical-align top
+		width 50%
+		padding 0 60px
+		margin-bottom 90px
+		h3
+			font-weight normal
+			font-size 27px
+			line-height 27px
+			font-family $bold
+			text-transform uppercase
+			margin-bottom 20px
+	&-text
+		font-size 16px
+		line-height 24px
+		margin-bottom 24px
+	&-tech
+		clear()
+		position relative
+		border-bottom 2px dotted rgba(0,0,0,.7)
+		margin-top 8px
+		span
+			float left
+			display inline-block
+			vertical-align top
+			background-color #fff
+			padding-right 10px
+			font-size 16px
+			line-height 16px
+			position relative
+			top 4px
+			z-index 1
+		b
+			float right
+			display inline-block
+			vertical-align top
+			background-color #fff
+			padding-left 10px
+			font-size 16px
+			line-height 16px
+			position relative
+			top 4px
+			z-index 1
+	&-info
+		background-color #f6f8f6
+		padding-bottom 150px
+		position relative
+		&:before
+			display block
+			content ""
+			height 170px
+			background url('../img/offers-about-top.png') 0 0 no-repeat
+			top 0
+			left 0
+			right 0
+			margin-bottom 30px
+		&:after
+			display block
+			content ""
+			height 130px
+			background url('../img/offers-about-bottom.png') 0 0 no-repeat
+			position absolute
+			bottom 0
+			left 0
+			right 0
+		h2
+			font-weight normal
+			font-size 73px
+			line-height 73px
+			font-family $bold
+			color #be7b1d
+			margin 0 0 60px
+		h3
+			min-width 320px
+			display inline-block
+			vertical-align top
+			font-weight normal
+			font-size 27px
+			line-height 28px
+			font-family $black
+			color #fff
+			background-color #c54b46
+			text-transform uppercase
+			padding 5px
+			margin 0 0 15px
+		.service-tech
+			span
+			b
+				background-color #f6f8f6
+		.service-row
+			h3
+				display block
+				background-color transparent
+				font-family $regular
+				color #000
+				padding 0
+			h3.service-row-title
+				min-width 0
+				display inline-block
+				vertical-align top
+				font-weight normal
+				font-size 27px
+				line-height 28px
+				font-family $black
+				color #fff
+				background-color #c54b46
+				text-transform uppercase
+				padding 5px
+				margin 0 0 15px
+.single
+	.catalog
+		padding-bottom 150px
+		&:after
+			display block
+			content ""
+			height 130px
+			background url('../img/offers-about-bottom.png') 0 0 no-repeat
+			position absolute
+			bottom 0
+			left 0
+			right 0
+	&-text
+		clear()
+		margin 0 -20px
+		padding-bottom 100px
+		&-cell
+			float left
+			width 50%
+			padding 0 20px
+	&-row
+		list()
+		clear()
+		margin-bottom 80px
+	&-column
+		clear()
+		margin 0 -20px
+		+ li
+			margin-top 130px
+		&:nth-child(even)
+			.content
+				float right
+			.image
+				float left
+		.content
+			float left
+			width 50%
+			padding 0 20px
+		.image
+			float right
+			width 50%
+			padding 0 20px
+			img
+				display block
+				width 100%
+				border 12px solid white
+				box-shadow 2.7px 6.4px 20px rgba(103, 103, 103, 0.28)
+		h3
+			font-weight normal
+			font-size 73px
+			line-height 60px
+			font-family $bold
+			margin 0
+			padding 40px 0 20px 0
+		.tour
+			padding-top 20px
+			i
+				display inline-block
+				vertical-align top
+				width 48px
+				height 33px
+				background url('../img/tour-black.png') 0 0 no-repeat
+				position relative
+				top -4px
+				margin-right 16px
+			a
+				font-size 15px
+				line-height 25px
+				text-transform uppercase
+				&:hover
+					color #f01a21
+	&-more
+		font-size 15px
+		line-height 25px
+		text-transform uppercase
+		padding-top 30px
+		padding-left 72px
+		a
+			position relative
+			&:before
+				display block
+				content ""
+				width 50px
+				height 1px
+				background-color #c54b46
+				position absolute
+				top 11px
+				right 100%
+				margin-right 20px
+				transition all .3s ease-out
+				border-width 6px 10px 7px 10px
+				border-right-color #c54b46
+			&:after
+				display block
+				content ""
+				width 0
+				height 0
+				border-style solid
+				border-color transparent
+				border-width 7px 10px 6px 10px
+				border-left-color #c54b46
+				position absolute
+				top 4px
+				right 100%
+				margin-right 8px
+				transition all .3s ease-out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
