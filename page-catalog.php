@@ -46,6 +46,7 @@ $('a.id2').click();
   					<?php if( have_rows('catalog',options) ): ?>
   					<?php $counter = 1; ?>
   					<div class="catalog-body">
+
   						<?php while( have_rows('catalog',options) ): the_row();
   							$name = get_sub_field('catalog-name');
   							$price = get_sub_field('catalog-price');
@@ -159,7 +160,7 @@ $('a.id2').click();
     						  <h3 class="service-row-title"><? the_sub_field('menu-category') ?></h3>
     							<h3><? the_sub_field('menu-title') ?></h3>
     							<div class="service-text"><? the_sub_field('menu-anons') ?></div>
-   							  <?/* 
+   							  <?/*
 								<div class="service-tech"><span><? the_sub_field('menu-weight') ?></span><b><? the_sub_field('menu-price') ?></b></div>
 							   */?>
     						</li>

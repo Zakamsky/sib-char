@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="13cc9295-af1b-4954-a33b-0c7a10a46f1b" name="esibchar.elkin.dev" url="http://5.180.137.114">
+        <fileTransfer host="5.180.137.114" port="22" rootFolder="/home/mytst/web/sibchar.elkin.dev/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
