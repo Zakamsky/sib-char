@@ -10,6 +10,7 @@ Template post type: post, page
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="#"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php if ( !is_front_page() ) { custom_breadcrumbs(); } ?>
 				<div class="row">
   				<?php if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="page-articles ui-articles">
@@ -24,7 +25,7 @@ foreach( $myposts as $post ){ setup_postdata($post);
 <div class="post">
 <div class="post-img"><?php the_post_thumbnail('thumbnail'); ?></div>
 <div class="post-txt">
-<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> 
+<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 <? /* ?><div class="post-date"><?php echo get_the_date('j F Y'); ?></div><? */ ?>
 </div>
 </div>

@@ -25,6 +25,7 @@ $('a.id2').click();
 <div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="catalog">
   				<div class="row js-tabs">
   					<div class="catalog-tabs">
@@ -60,7 +61,7 @@ $('a.id2').click();
   						<div class="js-tabs-body id<?php echo $counter; ?>" data-id="catalog<?php echo $counter; ?>">
   							<div class="catalog-content">
     							<div class="left">
-  								<h3><?php echo $name; ?></h3>
+  								<h1><?php echo $name; ?></h1>
   								<div class="catalog-anons"><?php echo $anons; ?></div>
   								<div class="catalog-text"><?php echo $desc; ?></div>
     							</div>
@@ -107,7 +108,7 @@ $('a.id2').click();
 <? */ ?>
 						<div class="catalog-icons">
   									<div class="carousel js-icons">
-  										<div class="swiper-wrapper">    											
+  										<div class="swiper-wrapper">
     											<div class="swiper-slide">
   												<div class="catalog-icons-item">
   													<img src="/wp-content/themes/public/img/icons-svg/rozetka.svg" alt="Электрическая розетка и свет"  style="width: 80px; height: 80 px;"/>
@@ -137,7 +138,7 @@ $('a.id2').click();
   													<img src="/wp-content/themes/public/img/icons-svg/voda.svg" alt="Вода 5 литров"  style="width: 80px; height: 80 px;"/>
   													<span>Вода 5 литров</span>
   												</div>
-  											</div>    											
+  											</div>
 											<div class="swiper-slide">
   												<div class="catalog-icons-item">
   													<img src="/wp-content/themes/public/img/icons-svg/ploshadka.svg" alt="Детская площадка"  style="width: 80px; height: 80 px;"/>
@@ -149,7 +150,7 @@ $('a.id2').click();
   													<img src="/wp-content/uploads/2018/11/parking.png" alt="Бесплатная парковка"  style="width: 80px; height: 80 px;"/>
   													<span>Бесплатная парковка</span>
   												</div>
-  											</div>    											
+  											</div>
   										</div>
   									</div>
   									<div class="carousel-control icons-prev"></div>

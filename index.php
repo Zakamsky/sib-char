@@ -141,7 +141,7 @@ jQuery(document).ready(function(){
 						</div>
 						<div style="display: none" id="iconpic">
 <? /* popup block */?>
-							<?php 
+							<?php
 							$images = get_field('iconpic',options);
 							$size = 'full';
 							if( $images ): ?>
@@ -341,15 +341,17 @@ jQuery(document).ready(function(){
 						<div class="location-content">
 							<div class="location-cell location-cell_long"><b>В&nbsp;10&nbsp;минутах от&nbsp;центра города на&nbsp;самом берегу реки Обь.</b></div>
 							<div class="location-cell">г. Новосибирск<br>улица Корчагина, 8/1</div>
-                            <div class="location-cell">телефон для бронирования:<br><span class="podmena">+7 383 383-50-30</span></div>
+                            <div class="location-cell">телефон для бронирования:<br><a href="tel:73833835030" class="a-tel">+7 383 383-50-30</a></div>
 						</div>
 					</div>
 					<div class="location-area">
 						<div class="location-maps">
-							<div id="maps" class="maps"></div>
+							<div id="maps" class="maps">
+                                <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2289.2326706471963!2d82.97852141590089!3d54.98655448035538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2ses!4v1627839288429!5m2!1sru!2ses" width="1260" height="461" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
 <?/*?>
 							<script src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-							<script>							
+							<script>
 								function init () {
 								        multiRoute = new ymaps.multiRouter.MultiRoute({
 								            referencePoints: [
@@ -368,9 +370,9 @@ jQuery(document).ready(function(){
 									var myMap = new ymaps.Map('maps', {
 										center: [54.98853312501374,82.98207596160482],
 										zoom: 15,
-										controls: ['zoomControl']										
+										controls: ['zoomControl']
 									});
-	
+
 									myMap.geoObjects.add(multiRoute);
 
 									myPlacemark0 = new ymaps.Placemark([54.98553240, 82.97896394], {
@@ -385,7 +387,7 @@ jQuery(document).ready(function(){
 								        });
 
 									myMap.geoObjects.add(myPlacemark0);
-	
+
 								}
 								ymaps.ready(init);
 							</script>

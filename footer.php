@@ -1,20 +1,20 @@
 <?
 if (get_the_ID() == 403) $type_order="ДОМИКИ";
 else  $type_order="БАНЬКУ";
-?>		
+?>
 		<div class="wrap-dn">
 			<div class="wrap-dn-bg">
 				<div class="row">
 					<div class="foot">
 						<div class="foot-logo"><img src="/wp-content/themes/public/img/foot-logo.svg" alt=""></div>
 						<div class="foot-social">
-							<a href="https://www.instagram.com/sibirskiiharakter/" target="_blank" class="inst"><img src="/wp-content/themes/public/img/icon-instagram.png" alt="" class="inst"></a>
-							<a href="https://vk.com/sibirskiiharakter" target="_blank"><img src="/wp-content/themes/public/img/icon-vk.png" alt="" class="vk"></a>
-							<a href="https://www.facebook.com/sibirskiiharakter/" target="_blank"><img src="/wp-content/themes/public/img/icon-fb.png" alt="" class="fb"></a>
+							<a href="https://www.instagram.com/sibirskiiharakter/" target="_blank" class="inst" rel="nofollow"><img src="/wp-content/themes/public/img/icon-instagram.png" alt="" class="inst"></a>
+							<a href="https://vk.com/sibirskiiharakter" target="_blank" rel="nofollow"><img src="/wp-content/themes/public/img/icon-vk.png" alt="" class="vk"></a>
+							<a href="https://www.facebook.com/sibirskiiharakter/" target="_blank" rel="nofollow"><img src="/wp-content/themes/public/img/icon-fb.png" alt="" class="fb"></a>
 						</div>
 						<div class="foot-cell foot-cell_long"><b>В&nbsp;10&nbsp;минутах от&nbsp;центра города на&nbsp;самом берегу реки Обь.<br>Работаем круглосуточно.</b></div>
 						<div class="foot-cell">г. Новосибирск<br>улица Корчагина, 8/1</div>
-						<div class="foot-cell"><a href="mailto:sibharakter54@mail.ru">Sibharakter54@mail.ru</a><br>телефон для бронирования:<br><span class="foot-phone  podmena">+7 383 383-50-30</span></div>
+						<div class="foot-cell"><a href="mailto:sibharakter54@mail.ru">Sibharakter54@mail.ru</a><br>телефон для бронирования:<br><a href="tel:73833835030" class="a-tel foot-phone  podmena">+7 383 383-50-30</a></div>
 						<div class="foot-cell foot-doc"><a href="<?php echo get_page_link(14); ?>">Кухня</a><br>
 										<a href="<?php echo get_page_link(92); ?>">Способы и&nbsp;условия оплаты</a><br>
 										<a href="<?php echo get_page_link(398); ?>">Блог</a><br>
@@ -25,7 +25,7 @@ else  $type_order="БАНЬКУ";
 						<div class="foot-cell"><a href="<?php echo get_page_link(90); ?>">Политика конфиденциальности</a></div>
 						<div class="foot-cell foot-copyright">Все права защищены &copy;&nbsp;2019-2021</div>
 						<div class="foot-btn"><a href="javascript:void(0)" onclick="yaCounter47949776.reachGoal('bron-bani'); ga('send', 'event', 'Подвал сайта', 'Забронировать'); return true;" rel="nofollow" class="btn btn-book js-api ms_booking"><b>ЗАБРОНИРОВАТЬ</b> <?=$type_order?> ON-LINE</a></div>
-						<div class="foot-dev">Разработано&nbsp;&mdash;<br><a href="http://brenda.ru/" class="a-red" target="_blank">&laquo;Креативная студия Бренда&raquo;</a></div>
+						<div class="foot-dev">Разработано&nbsp;&mdash;<br><a href="http://brenda.ru/" class="a-red" target="_blank" rel="nofollow">&laquo;Креативная студия Бренда&raquo;</a></div>
 					</div>
 				</div>
 			</div>
@@ -86,16 +86,16 @@ else  $type_order="БАНЬКУ";
 <?
 /*
 if (get_the_ID() == 308) {
-*/ 
+*/
 	?>
 	<!--div class="ngs-award"><a href="https://ngs.ru/award/votes/spa/" title="Проголосовать"><img src="/wp-content/themes/public/img/ngs-top10.jpg"></a></div-->
 	<div class="ngs-award"><img src="/wp-content/themes/public/img/ngs-top10.jpg"></div>
 	<div class="phone-button"><a href="tel:+73833835030" class="phone-button-podmena podmena" style="font-size: 0px;" title="Забронировать баню. Позвонить нам." onclick="yaCounter47949776.reachGoal('mobile-phone'); ga('send', 'event', 'Иконка', 'Позвонить'); return true;"><img src="/wp-content/themes/public/img/icon_phone.svg"></a></div>
 	<div class="wa-button"><a href="https://api.whatsapp.com/send?phone=79137897063" title="Забронировать баню. Написать нам в Whatsapp."  onclick="yaCounter47949776.reachGoal('mobile-whatsapp');ga('send', 'event', 'Иконка', 'Написать в whatsapp'); return true;"><img src="/wp-content/themes/public/img/icon_wa.svg"></a></div>
 	<?
-/* 
+/*
 }
-*/ 
+*/
 ?>
 
 

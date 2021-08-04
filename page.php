@@ -4,6 +4,7 @@
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="#"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="row">
   				<?php if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="page-articles ui-articles">

@@ -5,9 +5,9 @@
 		<div class="wrap-promo"></div>
 		<div class="wrap-tour"><a href="#"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 		<div class="body-page-content">
+            <?php  custom_breadcrumbs(); ?>
 			<div class="row">
 				<div class="service">
-					<h1>Услуги</h1>
 					<div class="service-block">
 						<h1><? the_field('service-title') ?></h1>
 						<div class="service-block-anons"><? the_field('service-anons') ?></div>
@@ -15,7 +15,7 @@
 						<?php
               $image = get_field('service-image');
               if( !empty($image) ):
-              $url = $image['url'];                  
+              $url = $image['url'];
             ?>
 						<div class="service-block-photo"><img src="<? echo $url; ?>" alt=""></div>
 						<? endif; ?>

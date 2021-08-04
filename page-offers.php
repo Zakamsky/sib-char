@@ -5,6 +5,7 @@
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="#"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="row">
 					<div class="offers">
 						<h1><? the_title() ?></h1>
@@ -40,8 +41,8 @@
 							</div>
 						<div class="column">
 							<!--div class="column-cell"-->
-								
-							<!--/div-->							
+
+							<!--/div-->
 						</div>
 					</div>
 				</div>

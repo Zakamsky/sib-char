@@ -24,6 +24,7 @@ $('a.id2').click();
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="catalog">
   				<div class="row js-tabs">
   					<div class="catalog-tabs">

@@ -1,18 +1,60 @@
 <?
     get_header();
     //Template Name: Catalog-single
+
+    $bath_selector = get_field('bath_selector');
 ?>
 
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="catalog">
   				<div class="row">
 
-<!--  					--><?php //if( have_rows('catalog',options) ): ?>
+                    <div class="catalog-tabs">
+                        <h2>НАШИ БАНИ</h2>
+
+                        <?php if( have_rows('catalog',options) ): ?>
+                            <?php $counter = 0; ?>
+                            <ul class="catalog-tabs-nav">
+                                <?php while( have_rows('catalog',options) ): the_row();
+                                    $tab = get_sub_field('catalog-tab');
+                                    $price = get_sub_field('catalog-price');
+                                    ?>
+                                    <li class="catalog-tabs-item">
+                                        <!-- $bath_selector: <?= $bath_selector ?> -->
+                                        <!-- $counter: <?= $counter ?> -->
+                                        <a <?php
+                                            $href = 'href="#"';
+                                             if ( $counter == $bath_selector) {
+                                                 $href = '';
+                                             } elseif ($counter === 0) {
+                                                 $url = get_page_link(394);
+                                                 $href = "href=$url";
+                                             } elseif ($counter === 1) {
+                                                 $url = get_page_link(395);
+                                                 $href = "href=$url";
+                                             } elseif ($counter === 2) {
+                                                 $url = get_page_link(396);
+                                                 $href = "href=$url";
+                                             }
+                                             echo $href;
+                                            ?>
+
+                                           class="js-tabs-a <?php if ($counter == $bath_selector) echo 'current'; ?>">
+                                            <b><?php echo $tab; ?></b>
+                                            <?php echo $price; ?>
+                                        </a>
+                                    </li>
+                                    <?php $counter++; ?>
+                                <?php endwhile; ?>
+                            </ul>
+                        <? endif; ?>
+                    </div>
 
                     <?php
-                        $bath_selector = get_field('bath_selector');
+//                        $bath_selector = get_field('bath_selector');
 
                         $baths_rows = get_field('catalog',options);
 

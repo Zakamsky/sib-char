@@ -26,6 +26,7 @@ $('a.id2').click();
 			<div class="wrap-promo"></div>
 			<div class="wrap-tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 			<div class="body-page-content body-page-single single">
+                <?php  custom_breadcrumbs(); ?>
 				<div class="catalog">
   				<div class="row js-tabs">
   					<div class="catalog-tabs">
@@ -60,7 +61,7 @@ $('a.id2').click();
   						<div class="js-tabs-body id<?php echo $counter; ?>" data-id="catalog<?php echo $counter; ?>">
   							<div class="catalog-content">
     							<div class="left">
-  								<h3><?php echo $name; ?></h3>
+  								<h1><?php echo $name; ?></h1>
   								<div class="catalog-anons"><?php echo $anons; ?></div>
   								<div class="catalog-text"><?php echo $desc; ?></div>
     							</div>
@@ -161,7 +162,7 @@ $('a.id2').click();
     						  <h3 class="service-row-title"><? the_sub_field('menu-category') ?></h3>
     							<h3><? the_sub_field('menu-title') ?></h3>
     							<div class="service-text"><? the_sub_field('menu-anons') ?></div>
-   							  <?/* 
+   							  <?/*
 								<div class="service-tech"><span><? the_sub_field('menu-weight') ?></span><b><? the_sub_field('menu-price') ?></b></div>
 							   */?>
     						</li>

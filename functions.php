@@ -6,6 +6,7 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+require_once get_template_directory() . '/includes/breadcrumbs.php';
 
 register_nav_menus(array(
 	'top'    => 'Главное меню'

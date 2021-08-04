@@ -255,7 +255,7 @@ template {
 @import 'css/font-awesome.min.css';
 
 .pt0 {
-  padding-top: 0px !important;	
+  padding-top: 0px !important;
 }
 .swiper-container {
   margin-left: auto;
@@ -1047,21 +1047,21 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
-.wrap-ng-tr {  
+.wrap-ng-tr {
   width: 196px;
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 1;
 }
-.wrap-ng-tl { 
+.wrap-ng-tl {
   width: 196px;
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
 }
-.wrap-ng-left {  
+.wrap-ng-left {
   width: 150px;
   position: absolute;
   top: -45px;
@@ -2235,6 +2235,7 @@ a:hover {
   position: absolute;
   background-repeat: no-repeat;
   background-position: 0 0;
+  pointer-events: none;
 }
 .location-area:before {
   width: 536px;
@@ -2277,12 +2278,11 @@ a:hover {
   background:url('/wp-content/themes/public/img/ymap.png');
   background-position: center bottom;
 }
-.location-maps .maps iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.location-maps .maps .maps-iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .area {
   background-color: #fff;
@@ -2460,13 +2460,13 @@ a:hover {
   left: 36px;
 }
 .foot-social .vk {
-  margin: 0 16px;	
+  margin: 0 16px;
 }
 .foot-social .inst {
-  margin: -4px 0 0 0;	
+  margin: -4px 0 0 0;
 }
 .foot-social .fb {
-  margin: -8px 0 0 0;	
+  margin: -8px 0 0 0;
 }
 .foot-cell {
   float: left;
@@ -2550,7 +2550,7 @@ a:hover {
   width: auto;
   position: static;
   text-align: left;
-  margin-top: 10px;	
+  margin-top: 10px;
 }
 .body-page-content .catalog-btn {
   float: right;
@@ -2675,7 +2675,7 @@ a:hover {
 }
 .offers-block-list {
   list-style: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 .offers-block-list li + li {
@@ -2687,7 +2687,7 @@ a:hover {
 .offers-block-list li:nth-child(odd) .offers-block {
   padding-right: 740px;
 }
-  
+
 
 .offers-block-list li:nth-child(even) .offers-block-photo {
   left: 0;
@@ -3332,7 +3332,7 @@ a:hover {
 	}
   .wa-button img {
 	width: 60px;
-  }	
+  }
   .phone-button {
 	display:none;
 	/*
@@ -3344,7 +3344,7 @@ a:hover {
 	}
   .phone-button img {
 	width: 40px;
-  }	
+  }
   .ngs-award {
 	position:fixed;
 	bottom:20px;
@@ -3353,7 +3353,7 @@ a:hover {
 	}
   .ngs-award img {
 	width: 150px;
-  }	
+  }
 
   .list-simple-item {
     margin-bottom: 20px !important;
@@ -3659,11 +3659,11 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
     padding-right: 25px;
   }
 
-  .wrap-ng-tr {    
-  opacity: 0.5;  
+  .wrap-ng-tr {
+  opacity: 0.5;
 }
-.wrap-ng-tl {  
-  opacity: 0.5;  
+.wrap-ng-tl {
+  opacity: 0.5;
 }
 .wrap-ng-left {
   width: 120px;
@@ -3672,8 +3672,8 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
   left: 41%;
   z-index: 1;
 }
-.wrap-ng-right {  
-  display:none;  
+.wrap-ng-right {
+  display:none;
 }
 .wrap-logo {
     top: 70px;
@@ -3939,7 +3939,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
     line-height: 18px;
   }
   .foot-dev {
-    top: 215px;	
+    top: 215px;
     width: 180px;
     margin-top: 9px;
   }
@@ -4436,7 +4436,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
 	}
   .wa-button img {
 	width: 55px;
-  }	
+  }
   .phone-button {
 	position:fixed;
 	bottom:120px;
@@ -4445,7 +4445,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
 	}
   .phone-button img {
 	width: 55px;
-  }	
+  }
   .ngs-award {
 	position:fixed;
 	bottom:10px;
@@ -4454,7 +4454,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
 	}
   .ngs-award img {
 	width: 90px;
-  }	
+  }
 
   .list-simple-item {
     margin-bottom: 40px !important;
@@ -4486,7 +4486,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
   left: 16%;
   z-index: 1;
 }
-.wrap-ng-right {  
+.wrap-ng-right {
   display: block;
   width: 84px;
   position: absolute;
@@ -4892,7 +4892,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
     width: 100%;
     position: relative;
     top: 0;
-    margin-top: 5px;	
+    margin-top: 5px;
   }
   .body-page h1 {
     margin-bottom: 20px;
@@ -5328,4 +5328,28 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* customization elkin.dev */
+
+.breadcrumb{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  margin-left: .7em;
+
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\003E";
+  margin-right: .3rem;
+  color: lightgray;
+}
+
+.breadcrumb-item.active{
+  color: lightgray;
 }
