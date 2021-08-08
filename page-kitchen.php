@@ -20,7 +20,7 @@
                 if( !empty($image) ):
                 $url = $image['url'];
               ?>
-							<div class="service-block-photo"><img src="<?php echo $url; ?>" alt=""></div>
+							<div class="service-block-photo"><img src="<?php echo $url; ?>" alt="<?php echo esc_attr($image['alt'])?: the_title(); ?>"></div>
 							<? endif; ?>
 						</div>
 					</div>

@@ -21,7 +21,7 @@
       							<div class="offers-block-content"><? the_sub_field('offer-text'); ?></div>
       							<div class="offers-block-term"><? the_sub_field('offer-time'); ?></div>
     							</div>
-    							<div class="offers-block-photo"><? $image = get_sub_field('offer-image'); ?><img src="<?php echo $image['url']; ?>" alt=""></div>
+    							<div class="offers-block-photo"><? $image = get_sub_field('offer-image'); ?><img src="<?php echo $image['url']; ?>" alt="<?php echo esc_attr($image['alt'])?: the_title(); ?>"></div>
     							<div class="offers-block-contacts">
     								<b>Узнайте подробнее</b>
     								<a href="tel:+7 383 383-50-30" class="btn podmena">+7 383 383-50-30</a>

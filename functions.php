@@ -82,5 +82,14 @@ add_filter('excerpt_more', function($more) {
 });
 
 
+function change_empty_alt_to_title( $response ) {
+	if ( ! $response['alt'] ) {
+		$response['alt'] = sanitize_text_field( $response['uploadedToTitle'] );
+//		$response['alt'] = sanitize_text_field( "uploadedToTitle" );
+	}
 
-?>
+	return $response;
+}
+
+add_filter( 'wp_prepare_attachment_for_js', 'change_empty_alt_to_title' );
+

@@ -88,7 +88,7 @@
   											<? if( $images ): ?>
   											<?php foreach( $images as $image ): ?>
   											<div class="swiper-slide" data-swiper-autoplay="5000">
-  												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt=""></div>
+  												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo esc_attr($image['alt'])?: $name; ?>"></div>
   											</div>
   											<?php endforeach; ?>
   											<?php endif; ?>

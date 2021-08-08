@@ -6,7 +6,7 @@ else  $type_order="БАНЬКУ";
 			<div class="wrap-dn-bg">
 				<div class="row">
 					<div class="foot">
-						<div class="foot-logo"><img src="/wp-content/themes/public/img/foot-logo.svg" alt=""></div>
+						<div class="foot-logo"><img src="/wp-content/themes/public/img/foot-logo.svg" alt="логотип дома банного отдыха Сибирский характер"></div>
 						<div class="foot-social">
 							<a href="https://www.instagram.com/sibirskiiharakter/" target="_blank" class="inst" rel="nofollow"><img src="/wp-content/themes/public/img/icon-instagram.png" alt="" class="inst"></a>
 							<a href="https://vk.com/sibirskiiharakter" target="_blank" rel="nofollow"><img src="/wp-content/themes/public/img/icon-vk.png" alt="" class="vk"></a>

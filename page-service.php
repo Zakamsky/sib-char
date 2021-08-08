@@ -17,7 +17,7 @@
               if( !empty($image) ):
               $url = $image['url'];
             ?>
-						<div class="service-block-photo"><img src="<? echo $url; ?>" alt=""></div>
+						<div class="service-block-photo"><img src="<? echo $url; ?>" alt="<?php echo esc_attr($image['alt'])?: the_field('service-title'); ?>"></div>
 						<? endif; ?>
 					<?  $price = get_field('service-price');
 						if ( get_the_ID() != 234 ) { ?>

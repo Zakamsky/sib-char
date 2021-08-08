@@ -72,7 +72,7 @@ $('a.id2').click();
   											<? if( $images ): ?>
   											<?php foreach( $images as $image ): ?>
   											<div class="swiper-slide" data-swiper-autoplay="5000">
-  												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt=""></div>
+  												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo esc_attr($image['alt'])?: $name; ?>"></div>
   											</div>
   											<?php endforeach; ?>
   											<?php endif; ?>
@@ -127,7 +127,7 @@ $('a.id2').click();
 								<div class="tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 							</div>
 							<div class="image">
-								<img src="/wp-content/themes/public/img/files/2.jpg" alt="">
+								<img src="/wp-content/themes/public/img/files/2.jpg" alt="<?php echo esc_attr($image['alt'])?: $name; ?>">
 							</div>
 						</li>
 						<li class="single-column">
@@ -137,7 +137,7 @@ $('a.id2').click();
 								<div class="tour"><a href="<?php echo get_page_link(187); ?>"><i></i><span>Тур по&nbsp;комплексу</span></a></div>
 							</div>
 							<div class="image">
-								<img src="/wp-content/themes/public/img/files/3.jpg" alt="">
+								<img src="/wp-content/themes/public/img/files/3.jpg" alt="<?php echo esc_attr($image['alt'])?: $name; ?>">
 							</div>
 						</li>
 						<li class="single-column">
@@ -147,7 +147,7 @@ $('a.id2').click();
 								<div class="single-more"><a href="<?php echo get_page_link(14); ?>">Меню ресторана</a></div>
 							</div>
 							<div class="image">
-								<img src="/wp-content/themes/public/img/files/4.jpg" alt="">
+								<img src="/wp-content/themes/public/img/files/4.jpg" alt="<?php echo esc_attr($image['alt'])?: $name; ?>">
 							</div>
 						</li>
 					</ul>

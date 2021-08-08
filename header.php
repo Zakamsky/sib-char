@@ -103,9 +103,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     -->
 			<div class="wrap-logo">
     		    <?php if (is_front_page() ) {
-                echo'<img src="/wp-content/themes/public/img/logo.svg" alt="">';
+                echo'<img src="/wp-content/themes/public/img/logo.svg" alt="логотип дома банного отдыха Сибирский характер">';
                 } else {
-                echo '<a href="/"><img src="/wp-content/themes/public/img/logo.svg" alt=""></a>';
+                echo '<a href="/"><img src="/wp-content/themes/public/img/logo.svg" alt="логотип дома банного отдыха Сибирский характер"></a>';
                 } ?>
             </div>
 			<div class="head">

@@ -83,55 +83,55 @@ jQuery(document).ready(function(){
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_1.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_1.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>На берегу реки</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_2.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_2.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Собственная кухня</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_3.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_3.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Бесплатная парковка</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_4.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_4.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Просторные спальни</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_5.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_5.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Настоящий русский пар</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_6.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_6.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Купель офуро</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/football.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/football.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Настольный футбол</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_8.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_8.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Бильярд</span>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="about-item">
-										<div class="about-photo"><img src="/wp-content/themes/public/img/about_9.png" alt=""></div>
+										<div class="about-photo"><img src="/wp-content/themes/public/img/about_9.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 										<span>Просторные бассейны</span>
 									</div>
 								</div>
@@ -206,7 +206,7 @@ jQuery(document).ready(function(){
 											<? if( $images ): ?>
 											<?php foreach( $images as $image ): ?>
 											<div class="swiper-slide" data-swiper-autoplay="5000">
-												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt=""></div>
+												<div class="catalog-item"><img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></div>
 											</div>
 											<?php endforeach; ?>
 											<?php endif; ?>
@@ -236,19 +236,19 @@ jQuery(document).ready(function(){
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="kitchen-item">
-									<img src="/wp-content/themes/public/img/kitchen_2.png" alt="">
+									<img src="/wp-content/themes/public/img/kitchen_2.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 									<span>В&nbsp;оригинальном меню нашего шеф-повара можно отведать мясо дикой косули</span>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="kitchen-item">
-									<img src="/wp-content/themes/public/img/kitchen_3.png" alt="">
+									<img src="/wp-content/themes/public/img/kitchen_3.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 									<span>Узнать, каково на&nbsp;вкус мясо дикого&nbsp;лося</span>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="kitchen-item">
-									<img src="/wp-content/themes/public/img/kitchen_1.png" alt="">
+									<img src="/wp-content/themes/public/img/kitchen_1.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 									<span>И&nbsp;насладиться вкусом серо-голубой стерляди и&nbsp;рыбных деликатесов</span>
 								</div>
 							</div>
@@ -273,7 +273,7 @@ jQuery(document).ready(function(){
 					<ul class="services-content">
 						<li class="services-item">
 							<a href="<?php echo get_page_link(150); ?>" class="services-field services-field_long">
-								<img src="/wp-content/themes/public/img/service_1n.jpg" alt="">
+								<img src="/wp-content/themes/public/img/service_1n.jpg" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 								<span class="services-field-content">
 									<span class="services-field-cat">Программы</span>
 									<span class="services-field-title">парения</span>
@@ -284,7 +284,7 @@ jQuery(document).ready(function(){
 						</li>
 						<li class="services-item">
 							<a href="<?php echo get_page_link(12); ?>" class="services-field">
-								<img src="/wp-content/themes/public/img/service_2n.jpg" alt="">
+								<img src="/wp-content/themes/public/img/service_2n.jpg" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 								<span class="services-field-content">
 									<span class="services-field-cat">ОФУРО</span>
 									<span class="services-field-title">Купель из кедра</span>
@@ -296,7 +296,7 @@ jQuery(document).ready(function(){
 						<?/*
 						<li class="services-item">
 							<a href="<?php echo get_page_link(153); ?>" class="services-field">
-								<img src="/wp-content/themes/public/img/service_3.jpg" alt="">
+								<img src="/wp-content/themes/public/img/service_3.jpg" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 								<span class="services-field-content">
 									<span class="services-field-cat">Косметические</span>
 									<span class="services-field-title">процедуры</span>
@@ -308,7 +308,7 @@ jQuery(document).ready(function(){
 						*/?>
 						<li class="services-item">
 							<a href="<?php echo get_page_link(155); ?>" class="services-field">
-								<img src="/wp-content/themes/public/img/service_3n.jpg" alt="">
+								<img src="/wp-content/themes/public/img/service_3n.jpg" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 								<span class="services-field-content">
 									<span class="services-field-cat">МАССАЖ</span>
 									<span class="services-field-title">разных типов</span>
@@ -320,7 +320,7 @@ jQuery(document).ready(function(){
 						<?/*
 						<li class="services-item">
 							<a href="<?php echo get_page_link(157); ?>" class="services-field">
-								<img src="/wp-content/themes/public/img/service_5.jpg" alt="">
+								<img src="/wp-content/themes/public/img/service_5.jpg" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
 								<span class="services-field-content">
 									<span class="services-field-cat">Проведение</span>
 									<span class="services-field-title">мероприятий</span>
@@ -402,28 +402,28 @@ jQuery(document).ready(function(){
 					<div class="carousel js-area carousel-area">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_1.png" alt=""></span>Лодочки для<br>фотосессии</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_1.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>Лодочки для<br>фотосессии</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_2.png" alt=""></span>Бугринский<br>мост</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_2.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>Бугринский<br>мост</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_3.png" alt=""></span>Красивая<br>природа</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_3.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>Красивая<br>природа</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_4.png" alt=""></span>мкр. Европейский<br>берег</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_4.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>мкр. Европейский<br>берег</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_5.png" alt=""></span>Утки<br>в&nbsp;заливе</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_5.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>Утки<br>в&nbsp;заливе</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_6.png" alt=""></span>Автобусная<br>остановка<br>в&nbsp;5&nbsp;минутах</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_6.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>Автобусная<br>остановка<br>в&nbsp;5&nbsp;минутах</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_7.png" alt=""></span>10&nbsp;минут<br>на&nbsp;такси из&nbsp;центра</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_7.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>10&nbsp;минут<br>на&nbsp;такси из&nbsp;центра</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_8.png" alt=""></span>до&nbsp;метро три<br>остановки</div>
+								<div class="area-item"><span><img src="/wp-content/themes/public/img/area-icon_8.png" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>"></span>до&nbsp;метро три<br>остановки</div>
 							</div>
 						</div>
 						<div class="carousel-control area-prev"></div>
@@ -445,7 +445,7 @@ jQuery(document).ready(function(){
 								<div class="reviews-user">
 									<? the_sub_field('review-name'); ?>
 									<div class="reviews-user_photo">
-    									<img src="<? $image = the_sub_field('review-photo'); ?>" alt="">
+    									<img src="<? $image = the_sub_field('review-photo'); ?>" alt="<?php echo esc_attr($image['alt'])?: "Русская баня на дровах"; ?>">
                                     </div>
 								</div>
 							</div>
