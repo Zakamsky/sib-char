@@ -5330,7 +5330,7 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
     height: 100%;
 }
 
-/* customization elkin.dev */
+/* ===== customization elkin.dev ===== */
 
 .breadcrumb{
   list-style: none;
@@ -5353,3 +5353,89 @@ body.body-homepage .nav-menu .current-menu-item a:hover {
 .breadcrumb-item.active{
   color: lightgray;
 }
+
+
+/* sticky menu */
+
+.--js-sticky-on .wrap-up::before{
+  content: '';
+  position: fixed;
+  height: 298px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(5, 50, 6, .6);
+  background-image: url(./img/head-line.png), url(./img/head.jpg);
+  background-size: 110%, cover;
+  background-position: center bottom -22px, center;
+  background-repeat: no-repeat;
+  z-index: 90;
+}
+
+.--js-sticky-on .nav {
+  position: fixed;
+  top: 15px;
+  z-index: 95;
+}
+
+.--js-sticky-on .wrap-logo {
+  position: fixed;
+  top: 15px;
+  height: 95px;
+  z-index: 95;
+  background-image: url(./img/logo-sticky.svg);
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.--js-sticky-on .wrap-logo img {
+  display: none;
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .--js-sticky-on .wrap-logo {
+    height: 50px;
+  }
+  .--js-sticky-on .wrap-up::before {
+    height: 130px;
+  }
+}
+
+.--js-sticky-on .wrap-up::before,
+.--js-sticky-on .nav,
+.--js-sticky-on .wrap-logo {
+  animation: slideUpIn .6s ease-in-out;
+}
+
+.--js-sticky-on.--js-sticky-animation-out .wrap-up::before,
+.--js-sticky-on.--js-sticky-animation-out .nav,
+.--js-sticky-on.--js-sticky-animation-out .wrap-logo {
+  opacity: 0;
+  animation: slideUpOut .35s ease-in-out;
+}
+
+@keyframes slideUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpOut {
+  from {
+    /*transform: translateY(0);*/
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /*transform: translateY(-300px);*/
+  }
+}
+
