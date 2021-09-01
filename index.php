@@ -347,7 +347,7 @@ jQuery(document).ready(function(){
 					<div class="location-area">
 						<div class="location-maps">
 							<div id="maps" class="maps">
-                                <iframe class="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2289.2326706471963!2d82.97852141590089!3d54.98655448035538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2ses!4v1627839288429!5m2!1sru!2ses" width="1260" height="461" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe class="maps-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c1d958aed500a1c756daa4f95100c2a885904c9251994e0b91ef0429c269700&amp;source=constructor" style="border:0; width:100%; max-width:100%;" width="1280" height="400" ></iframe>
                             </div>
 <?/*?>
 							<script src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>

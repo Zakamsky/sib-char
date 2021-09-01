@@ -14,9 +14,9 @@ if (get_the_ID() == 396) $banyaID = 3;
 	})
 /*
 $(window).load(function(){
-<? if (get_the_ID() == 367) { ?>
+<? // if (get_the_ID() == 367) { ?>
 $('a.id2').click();
-<? } ?>
+<? // } ?>
 });
 */
 });
@@ -30,19 +30,56 @@ $('a.id2').click();
   					<div class="catalog-tabs">
   						<h2>НАШИ БАНИ</h2>
 
-  						<?php if( have_rows('catalog',options) ): ?>
-  						<?php $counter = 1; ?>
-  						<ul class="catalog-tabs-nav">
-  							<?php while( have_rows('catalog',options) ): the_row();
-  								$tab = get_sub_field('catalog-tab');
-  								$price = get_sub_field('catalog-price');
-  							?>
-  							<li class="catalog-tabs-item"><a href="javascript:void(0)" data-id="catalog<?php echo $counter; ?>" class="js-tabs-a id<?php echo $counter; ?> "><b><?php echo $tab; ?></b><?php echo $price; ?></a></li>
+                        <?php if( have_rows('catalog',options) ): ?>
+                            <?php $counter = 0; ?>
+                            <ul class="catalog-tabs-nav">
+                                <?php while( have_rows('catalog',options) ): the_row();
+                                    $tab = get_sub_field('catalog-tab');
+                                    $price = get_sub_field('catalog-price');
+                                    ?>
+                                    <li class="catalog-tabs-item">
+                                        <!-- $bath_selector: <?= $bath_selector ?> -->
+                                        <!-- $counter: <?= $counter ?> -->
+                                        <a <?php
+                                        $href = 'href="#"';
+                                        if ($counter === 0) {
+                                            $url = get_page_link(394);
+                                            $href = "href=$url";
+                                        } elseif ($counter === 1) {
+                                            $url = get_page_link(395);
+                                            $href = "href=$url";
+                                        } elseif ($counter === 2) {
+                                            $url = get_page_link(396);
+                                            $href = "href=$url";
+                                        }
+                                        echo $href;
+                                        ?>
 
-  							<?php $counter++; ?>
-  							<?php endwhile; ?>
-  						</ul>
-  						<? endif; ?>
+                                                class="js-tabs-a">
+                                            <b style="color: #000000;"><?php echo $tab; ?></b>
+                                            <?php echo $price; ?>
+                                        </a>
+                                    </li>
+                                    <?php $counter++; ?>
+                                <?php endwhile; ?>
+                            </ul>
+                        <? endif; ?>
+
+<!--  						--><?php // old tab:  ?>
+<!--  						--><?php //if( have_rows('catalog',options) ): ?>
+<!--  						--><?php //$counter = 1; ?>
+<!--  						<ul class="catalog-tabs-nav">-->
+<!--  							--><?php //while( have_rows('catalog',options) ): the_row();
+//  								$tab = get_sub_field('catalog-tab');
+//  								$price = get_sub_field('catalog-price');
+//  							?>
+<!--  							<li class="catalog-tabs-item"><a href="javascript:void(0)" data-id="catalog--><?php //echo $counter; ?><!--" class="js-tabs-a id--><?php //echo $counter; ?><!-- "><b>--><?php //echo $tab; ?><!--</b>--><?php //echo $price; ?><!--</a></li>-->
+<!---->
+<!--  							--><?php //$counter++; ?>
+<!--  							--><?php //endwhile; ?>
+<!--  						</ul>-->
+<!--  						--><?// endif; ?>
+
   					</div>
   					<?php if( have_rows('catalog',options) ): ?>
   					<?php $counter = 1; ?>
