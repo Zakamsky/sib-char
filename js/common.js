@@ -177,57 +177,57 @@ jQuery(document).ready(function(){
 
 	// sticky menu:
 
-	let last_known_scroll_position = 0;
-	let isScrollListener = false;
-	let isSticky = false;
-	const headerHeaight = document.querySelector('.wrap-promo').clientHeight;
-	const body = document.querySelector('body');
-
-
-
-
-	console.log('### headerHeaight client: ', headerHeaight);
-
-	const scrollListener = () => {
-
-		if ( ( window.scrollY > headerHeaight + 200 ) && isSticky === false ) {
-			body.classList.add('--js-sticky-on')
-			isSticky = true;
-			console.log('### this is sticky!!!');
-		} else if ( window.scrollY <= headerHeaight + 200 && isSticky ) {
-			// todo:  setTimeout() and animationed close
-			body.classList.add('--js-sticky-animation-out')
-			setTimeout(() => {
-				body.classList.remove('--js-sticky-on', '--js-sticky-animation-out')
-				isSticky = false;
-				console.log('### this is static!!!');
-			}, 600);
-		}
-	}
-
-
-
-	window.addEventListener( 'resize', function() {
-
-		if ( window.innerWidth >= 768 && !isScrollListener ) {
-
-			isScrollListener = true
-			window.addEventListener('scroll', scrollListener, false );
-
-		} else if (window.innerWidth < 768 && isScrollListener ) {
-
-			isScrollListener = false
-			window.removeEventListener('scroll', scrollListener, false )
-
-		}
-	}  ,false);
-
-	if ( window.innerWidth >= 768 && !isScrollListener ) {
-
-		isScrollListener = true
-		window.addEventListener('scroll', scrollListener, false );
-
-	}
+	// let last_known_scroll_position = 0;
+	// let isScrollListener = false;
+	// let isSticky = false;
+	// const headerHeaight = document.querySelector('.wrap-promo').clientHeight;
+	// const body = document.querySelector('body');
+	//
+	//
+	//
+	//
+	// console.log('### headerHeaight client: ', headerHeaight);
+	//
+	// const scrollListener = () => {
+	//
+	// 	if ( ( window.scrollY > headerHeaight + 200 ) && isSticky === false ) {
+	// 		body.classList.add('--js-sticky-on')
+	// 		isSticky = true;
+	// 		console.log('### this is sticky!!!');
+	// 	} else if ( window.scrollY <= headerHeaight + 200 && isSticky ) {
+	// 		// todo:  setTimeout() and animationed close
+	// 		body.classList.add('--js-sticky-animation-out')
+	// 		setTimeout(() => {
+	// 			body.classList.remove('--js-sticky-on', '--js-sticky-animation-out')
+	// 			isSticky = false;
+	// 			console.log('### this is static!!!');
+	// 		}, 600);
+	// 	}
+	// }
+	//
+	//
+	//
+	// window.addEventListener( 'resize', function() {
+	//
+	// 	if ( window.innerWidth >= 768 && !isScrollListener ) {
+	//
+	// 		isScrollListener = true
+	// 		window.addEventListener('scroll', scrollListener, false );
+	//
+	// 	} else if (window.innerWidth < 768 && isScrollListener ) {
+	//
+	// 		isScrollListener = false
+	// 		window.removeEventListener('scroll', scrollListener, false )
+	//
+	// 	}
+	// }  ,false);
+	//
+	// if ( window.innerWidth >= 768 && !isScrollListener ) {
+	//
+	// 	isScrollListener = true
+	// 	window.addEventListener('scroll', scrollListener, false );
+	//
+	// }
 
 
 	// window.addEventListener('resize', resize);
