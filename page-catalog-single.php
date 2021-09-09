@@ -30,7 +30,7 @@
                                              if ( $counter == $bath_selector) {
                                                  $href = '';
                                              } elseif ($counter === 0) {
-                                                 $url = get_page_link(394);
+                                                 $url = get_page_link(8);
                                                  $href = "href=$url";
                                              } elseif ($counter === 1) {
                                                  $url = get_page_link(395);
@@ -42,7 +42,7 @@
                                              echo $href;
                                             ?>
 
-                                           class="js-tabs-a <?php if ($counter == $bath_selector) echo 'current'; ?>">
+                                           class="pseudo-tabs-a <?php if ($counter == $bath_selector) echo 'current'; ?>">
                                             <b><?php echo $tab; ?></b>
                                             <?php echo $price; ?>
                                         </a>

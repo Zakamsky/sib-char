@@ -43,8 +43,8 @@ $('a.id2').click();
                                         <a <?php
                                         $href = 'href="#"';
                                         if ($counter === 0) {
-                                            $url = get_page_link(394);
-                                            $href = "href=$url";
+                                            $url = get_page_link(8);
+                                            $href = "";
                                         } elseif ($counter === 1) {
                                             $url = get_page_link(395);
                                             $href = "href=$url";
@@ -55,7 +55,7 @@ $('a.id2').click();
                                         echo $href;
                                         ?>
 
-                                                class="js-tabs-a">
+                                                class="pseudo-tabs-a <?php if ($counter === 0) echo 'current' ?> ">
                                             <b style="color: #000000;"><?php echo $tab; ?></b>
                                             <?php echo $price; ?>
                                         </a>
